@@ -93,6 +93,18 @@
   .area .tile:hover{background:#fff}
   .area .tile span{font-family:'Inter';font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:6px}
   .area .tile b{font-family:var(--serif);font-size:19px;color:var(--ink);font-weight:600}
+  /* real partners grid */
+  .team{background:#fff}
+  .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}
+  .tcard{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--cream);transition:transform .2s,box-shadow .2s}
+  .tcard:hover{transform:translateY(-4px);box-shadow:0 24px 46px -30px rgba(11,23,48,.5)}
+  .tcard .ph{position:relative;aspect-ratio:1/1;overflow:hidden;background:linear-gradient(160deg,var(--ink),var(--ink2))}
+  .tcard .ph img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(18%) contrast(1.02)}
+  .tcard .ph:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),transparent)}
+  .tcard .meta{padding:18px 20px 20px}
+  .tcard .meta .nm{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--ink);line-height:1.1}
+  .tcard .meta .rl{font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-top:7px}
+  .tnote{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:20px}
   .quotes{background:var(--cream2)}
   .qgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:34px}
   .quote{background:#fff;border:1px solid var(--line);border-radius:6px;padding:28px}
@@ -113,8 +125,8 @@
   footer{background:var(--ink);color:var(--stone);font-size:13px;padding:42px 0;text-align:center}
   footer .logo{color:#fff;justify-content:center;margin-bottom:10px}
   .demo-tag{position:fixed;bottom:14px;right:14px;background:rgba(11,23,48,.92);color:var(--stone);font-size:11.5px;padding:8px 13px;border-radius:5px;z-index:60;letter-spacing:.3px}
-  @media(max-width:880px){.hero-grid,.split,.cgrid{grid-template-columns:1fr}.listings{grid-template-columns:1fr 1fr}.area{grid-template-columns:1fr 1fr}.qgrid{grid-template-columns:1fr}}
-  @media(max-width:560px){.listings{grid-template-columns:1fr}.area{grid-template-columns:1fr}}
+  @media(max-width:880px){.hero-grid,.split,.cgrid{grid-template-columns:1fr}.listings{grid-template-columns:1fr 1fr}.area{grid-template-columns:1fr 1fr}.qgrid{grid-template-columns:1fr}.tgrid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.listings{grid-template-columns:1fr}.area{grid-template-columns:1fr}.tgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -124,7 +136,7 @@
   <div class="logo">Solomon Taylor &amp; Shaw<small>Hampstead · NW3</small></div>
   <div class="navlinks">
     <a href="#practice">Practice areas</a>
-    <a href="#why">Why us</a>
+    <a href="#team">Our partners</a>
     <a href="#founder">The firm</a>
     <a href="#contact" class="btn">Make an enquiry</a>
   </div>
@@ -187,6 +199,21 @@
     <div class="tile"><span>Network</span><b>Balms Group International</b></div>
     <div class="tile"><span>Location</span><b>Hampstead, NW3</b></div>
   </div>
+</div></section>
+
+<section id="team" class="team"><div class="wrap">
+  <div class="eyebrow reveal">Our partners</div>
+  <h2 class="reveal">The people you would actually be trusting.</h2>
+  <p class="lead reveal">A firm is only as good as the lawyers who run it. These are the partners behind Solomon Taylor &amp; Shaw, the senior people who take your call and stay with your matter from start to finish.</p>
+  <div class="tgrid">
+    <div class="tcard reveal"><div class="ph"><img src="proof/lawyer1.jpg" alt="Scott Atkinson, Partner"></div><div class="meta"><div class="nm">Scott Atkinson</div><div class="rl">Partner</div></div></div>
+    <div class="tcard reveal"><div class="ph"><img src="proof/lawyer2.jpg" alt="Ari Bloom, Partner"></div><div class="meta"><div class="nm">Ari Bloom</div><div class="rl">Partner</div></div></div>
+    <div class="tcard reveal"><div class="ph"><img src="proof/lawyer3.jpg" alt="Perminder Chima, Partner"></div><div class="meta"><div class="nm">Perminder Chima</div><div class="rl">Partner</div></div></div>
+    <div class="tcard reveal"><div class="ph"><img src="proof/lawyer4.jpg" alt="Xanthoula Christodoulou, Partner"></div><div class="meta"><div class="nm">Xanthoula Christodoulou</div><div class="rl">Partner</div></div></div>
+    <div class="tcard reveal"><div class="ph"><img src="proof/lawyer5.jpg" alt="Tessa Fry, Partner"></div><div class="meta"><div class="nm">Tessa Fry</div><div class="rl">Partner</div></div></div>
+    <div class="tcard reveal"><div class="ph"><img src="proof/lawyer6.jpg" alt="Geoff Mendelsohn, Partner"></div><div class="meta"><div class="nm">Geoff Mendelsohn</div><div class="rl">Partner</div></div></div>
+  </div>
+  <p class="tnote reveal">The firm's real partners. A redesigned site would give each one a full bio and the practice areas they lead, so a client meets them before they ever pick up the phone.</p>
 </div></section>
 
 <section id="founder"><div class="wrap split">
