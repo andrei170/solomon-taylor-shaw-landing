@@ -293,5 +293,6 @@
   const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
+<script>/*ag-form*/document.querySelectorAll("form").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var w=document.createElement("div");w.style.cssText="padding:20px;text-align:center;font-weight:600";w.textContent="Thank you. We will be in touch shortly.";f.parentNode.replaceChild(w,f);});});</script>
 </body>
 </html>
